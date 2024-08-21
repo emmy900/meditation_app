@@ -12,7 +12,7 @@ class SignUpPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Title and subtitle
-            Text('Welcome to Meditation App', 
+            Text('Welcome to Meditation App',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
             SizedBox(height: 20),
             Text('Sign up to continue', style: TextStyle(fontSize: 18)),
@@ -41,7 +41,8 @@ class SignUpPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 // Navigate to Discover Page
-                Navigator.push(context, MaterialPageRoute(builder: (context) =>DiscoverPage()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DiscoverPage()));
               },
               child: Text('Sign Up'),
               style: ElevatedButton.styleFrom(
